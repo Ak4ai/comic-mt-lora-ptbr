@@ -1,0 +1,26 @@
+# ambiente e caches
+.venv/
+.hf/
+__pycache__/
+*.pyc
+raw/
+
+# pesos treinados (publicados no Hugging Face e na release, nao no git)
+adapter/
+adapter_*/
+
+# registros e arquivos temporarios
+log_*.txt
+cv_done.txt
+*.parcial.json
+resultado_finetune_smoke.json
+visualizacao/*.zip
+
+# experimentos antigos, calculados na primeira divisao (com falas repetidas entre treino e teste):
+# foram substituidos pela validacao cruzada e por visualizacao/dados
+eval_case.py
+eval_tc.py
+resultado_tc.json
+resultado_case.*.json
+resultado_finetune.json
+resultado_final.json

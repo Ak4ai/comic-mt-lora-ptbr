@@ -1,0 +1,14 @@
+# versoes usadas nos experimentos (Python 3.12, GPU NVIDIA com CUDA)
+torch>=2.6
+transformers>=5.22
+peft>=0.21
+sacrebleu>=2.6
+sentencepiece
+sacremoses
+# analise visual (pasta visualizacao/)
+pandas>=3.1
+plotly>=7.1
+nbformat
+nbconvert
+ipykernel
+markdown
