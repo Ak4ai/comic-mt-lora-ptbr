@@ -38,8 +38,9 @@ Todos os números acima vêm dessa versão limpa.
 ## Modelo
 
 Adaptador LoRA (4,3 M de parâmetros treináveis, 17 MB) sobre [`Helsinki-NLP/opus-mt-tc-big-en-pt`](https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-en-pt).
-Ficha completa, uso e limitações em [`modelo/MODEL_CARD.md`](modelo/MODEL_CARD.md). Os pesos ficam na
-[release do GitHub](https://github.com/Ak4ai/comic-mt-lora-ptbr/releases). Para publicar o mesmo adaptador no Hugging Face: `hf auth login` e `python publicar_hf.py`.
+Ficha completa, uso e limitações em [`modelo/MODEL_CARD.md`](modelo/MODEL_CARD.md). O adaptador está no
+**[Hugging Face](https://huggingface.co/Ak4ai/opus-mt-tc-big-en-pt-comics-lora)** (carrega direto com `PeftModel.from_pretrained`) e também na
+[release do GitHub](https://github.com/Ak4ai/comic-mt-lora-ptbr/releases) (`.zip`). `publicar_hf.py` refaz a publicação.
 
 ## Como reproduzir
 
