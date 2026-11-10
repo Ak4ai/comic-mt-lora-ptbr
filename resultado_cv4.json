@@ -1,0 +1,110 @@
+{
+ "modelo_base": "Helsinki-NLP/opus-mt-tc-big-en-pt",
+ "n_treino": 1046,
+ "n_val": 244,
+ "n_teste": 339,
+ "config": {
+  "epochs": 8,
+  "bs": 16,
+  "lr": 0.0002,
+  "rank": 16,
+  "patience": 2,
+  "seed": 13
+ },
+ "base_teste": {
+  "chrF": 49.46,
+  "BLEU": 31.79
+ },
+ "base_val": {
+  "chrF": 30.01,
+  "BLEU": 13.5
+ },
+ "historico": [
+  {
+   "epoca": 0,
+   "val_loss": 1.4328
+  },
+  {
+   "epoca": 1,
+   "train_loss": 1.214,
+   "val_loss": 1.2188
+  },
+  {
+   "epoca": 2,
+   "train_loss": 0.9725,
+   "val_loss": 1.2009
+  },
+  {
+   "epoca": 3,
+   "train_loss": 0.8304,
+   "val_loss": 1.2064
+  },
+  {
+   "epoca": 4,
+   "train_loss": 0.7233,
+   "val_loss": 1.2308
+  }
+ ],
+ "parada": "parada antecipada (sem melhora da perda de validacao por 2 epocas)",
+ "ajustado_teste": {
+  "chrF": 54.04,
+  "BLEU": 40.63
+ },
+ "ajustado_val": {
+  "chrF": 32.84,
+  "BLEU": 17.89
+ },
+ "amostras": [
+  {
+   "en": "Glup",
+   "ref": "Glup",
+   "ajustado": "Glup"
+  },
+  {
+   "en": "FIRE D",
+   "ref": "FIRE D",
+   "ajustado": "FOGO D"
+  },
+  {
+   "en": "DEEP OCEAN",
+   "ref": "DEEP OCEAN",
+   "ajustado": "DEEP OCEAN"
+  },
+  {
+   "en": "VIOLE(N)T",
+   "ref": "VIOLE(N)T",
+   "ajustado": "VIOLE(N)T"
+  },
+  {
+   "en": "ULTRA BLUE",
+   "ref": "ULTRA BLUE",
+   "ajustado": "ULTRA AZUL"
+  },
+  {
+   "en": "PIN",
+   "ref": "PIN",
+   "ajustado": "PIN"
+  },
+  {
+   "en": "MSON",
+   "ref": "MSON",
+   "ajustado": "MSON"
+  },
+  {
+   "en": "NATURE",
+   "ref": "NATURE",
+   "ajustado": "NATUREZA"
+  },
+  {
+   "en": "YELLOW",
+   "ref": "YELLOW",
+   "ajustado": "BEM"
+  },
+  {
+   "en": "ORANGE TOP",
+   "ref": "ORANGE TOP",
+   "ajustado": "ORANGE TOP"
+  }
+ ],
+ "minutos": 1.4
+}

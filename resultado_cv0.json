@@ -1,0 +1,110 @@
+{
+ "modelo_base": "Helsinki-NLP/opus-mt-tc-big-en-pt",
+ "n_treino": 951,
+ "n_val": 437,
+ "n_teste": 249,
+ "config": {
+  "epochs": 8,
+  "bs": 16,
+  "lr": 0.0002,
+  "rank": 16,
+  "patience": 2,
+  "seed": 13
+ },
+ "base_teste": {
+  "chrF": 30.27,
+  "BLEU": 13.89
+ },
+ "base_val": {
+  "chrF": 49.8,
+  "BLEU": 30.36
+ },
+ "historico": [
+  {
+   "epoca": 0,
+   "val_loss": 1.268
+  },
+  {
+   "epoca": 1,
+   "train_loss": 1.2326,
+   "val_loss": 1.0169
+  },
+  {
+   "epoca": 2,
+   "train_loss": 0.9997,
+   "val_loss": 1.0016
+  },
+  {
+   "epoca": 3,
+   "train_loss": 0.8517,
+   "val_loss": 1.008
+  },
+  {
+   "epoca": 4,
+   "train_loss": 0.7471,
+   "val_loss": 1.0265
+  }
+ ],
+ "parada": "parada antecipada (sem melhora da perda de validacao por 2 epocas)",
+ "ajustado_teste": {
+  "chrF": 32.87,
+  "BLEU": 17.98
+ },
+ "ajustado_val": {
+  "chrF": 55.06,
+  "BLEU": 38.81
+ },
+ "amostras": [
+  {
+   "en": "...and the last touch.",
+   "ref": "...e o toque final",
+   "ajustado": "...e o último toque."
+  },
+  {
+   "en": "...mmm probably not strong enough.",
+   "ref": "...hmm parece um pouco fraca",
+   "ajustado": "...mmm provavelmente não forte o suficiente."
+  },
+  {
+   "en": "SHH",
+   "ref": "SHH",
+   "ajustado": "SHH"
+  },
+  {
+   "en": "PLOP",
+   "ref": "PLOP",
+   "ajustado": "PLOP"
+  },
+  {
+   "en": "ha... perfect.",
+   "ref": "Ah... perfeita",
+   "ajustado": "ha... perfeito."
+  },
+  {
+   "en": "NO! Don't even think about it.",
+   "ref": "NÃO! Nem pense nisso!",
+   "ajustado": "NO! Nem pense nisso."
+  },
+  {
+   "en": "SPLASH",
+   "ref": "SPLASH",
+   "ajustado": "SPLASH"
+  },
+  {
+   "en": "The night before the Potion challenge 2:00 AM",
+   "ref": "No dia do Torneio de Poções 2:00 AM",
+   "ajustado": "A noite antes do Desafio da Poção 2:00 AM"
+  },
+  {
+   "en": "Finally... With this potion, No one, not even Saffron, can match my skill!",
+   "ref": "Finalmente ... Com essa poção, ninguém, nem mesmo a Saffron será páreo para minha habilidade!!!",
+   "ajustado": "Finalmente... Com esta poção, Ninguém, nem mesmo Saffron, pode igualar a minha habilidade!"
+  },
+  {
+   "en": "I do need to test it on someone ...",
+   "ref": "Eu preciso testá-la em alguém...",
+   "ajustado": "Eu preciso testar em alguém..."
+  }
+ ],
+ "minutos": 1.4
+}

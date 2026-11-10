@@ -1,0 +1,110 @@
+{
+ "modelo_base": "Helsinki-NLP/opus-mt-tc-big-en-pt",
+ "n_treino": 1006,
+ "n_val": 343,
+ "n_teste": 288,
+ "config": {
+  "epochs": 8,
+  "bs": 16,
+  "lr": 0.0002,
+  "rank": 16,
+  "patience": 2,
+  "seed": 13
+ },
+ "base_teste": {
+  "chrF": 57.87,
+  "BLEU": 35.69
+ },
+ "base_val": {
+  "chrF": 49.27,
+  "BLEU": 32.04
+ },
+ "historico": [
+  {
+   "epoca": 0,
+   "val_loss": 1.311
+  },
+  {
+   "epoca": 1,
+   "train_loss": 1.2854,
+   "val_loss": 1.047
+  },
+  {
+   "epoca": 2,
+   "train_loss": 1.0557,
+   "val_loss": 1.0206
+  },
+  {
+   "epoca": 3,
+   "train_loss": 0.9001,
+   "val_loss": 1.0276
+  },
+  {
+   "epoca": 4,
+   "train_loss": 0.8043,
+   "val_loss": 1.0363
+  }
+ ],
+ "parada": "parada antecipada (sem melhora da perda de validacao por 2 epocas)",
+ "ajustado_teste": {
+  "chrF": 63.16,
+  "BLEU": 45.46
+ },
+ "ajustado_val": {
+  "chrF": 54.45,
+  "BLEU": 42.0
+ },
+ "amostras": [
+  {
+   "en": "Komona City; Market day",
+   "ref": "Cidade de Komona; Dia de Feira",
+   "ajustado": "Cidade de Komona; Dia do Mercado"
+  },
+  {
+   "en": "Good morning Sir, I would like eight pumpkinstars, please.",
+   "ref": "Bom dia, senhor. Eu gostaria de oito estrelabóboras, por favor",
+   "ajustado": "Bom dia, senhor, eu gostaria de oito estrelas de abóbora, por favor."
+  },
+  {
+   "en": "Here you are, that's 60Ko.*",
+   "ref": "Aqui está, são 60Ko*",
+   "ajustado": "Aqui está você, isso é 60Ko.*"
+  },
+  {
+   "en": "* Ko = the Komona currency unit",
+   "ref": "* Ko = unidade monetária de Komona",
+   "ajustado": "* Ko  a unidade monetária de Komona"
+  },
+  {
+   "en": "Uhh sorry, I'll have to take only four...",
+   "ref": "Uhh desculpa, eu só vou poder levar quatro four...",
+   "ajustado": "Uhh desculpe, eu vou ter que levar apenas quatro..."
+  },
+  {
+   "en": "Greetings, good Sir. Please prepare two dozen of everything for me. Premium quality, as usual.",
+   "ref": "Saudações, caro senhor. Por favor prepare duas dúzias de tudo para mim. Tudo da melhor qualidade, como sempre",
+   "ajustado": "Saudações, bom senhor. Por favor, prepare duas dúzias de tudo para mim. Qualidade Premium, como de costume."
+  },
+  {
+   "en": "It's always a pleasure to serve you, Miss Saffron.",
+   "ref": "É sempre um prazer servi-la, senhora Saffron",
+   "ajustado": "É sempre um prazer servi-la, Srta. Saffron."
+  },
+  {
+   "en": "Hey look, it's Pepper.",
+   "ref": "Olha só, é a Pepper",
+   "ajustado": "Ei, olha, é Pepper."
+  },
+  {
+   "en": "Oh, let me guess business is booming in the countryside?",
+   "ref": "Ah, deixe-me adivinhar? Os negócios estão prosperando lá na roça?",
+   "ajustado": "Oh, deixe-me adivinhar que os negócios estão crescendo no campo?"
+  },
+  {
+   "en": "I guess you're preparing the ingredients for tomorrow's potion challenge?",
+   "ref": "Acredito que você esteja se preparando os para o torneio de poções de amanhã",
+   "ajustado": "Acho que você está preparando os ingredientes para o desafio de poções de amanhã?"
+  }
+ ],
+ "minutos": 1.4
+}

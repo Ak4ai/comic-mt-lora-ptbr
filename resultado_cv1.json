@@ -1,0 +1,110 @@
+{
+ "modelo_base": "Helsinki-NLP/opus-mt-tc-big-en-pt",
+ "n_treino": 955,
+ "n_val": 241,
+ "n_teste": 430,
+ "config": {
+  "epochs": 8,
+  "bs": 16,
+  "lr": 0.0002,
+  "rank": 16,
+  "patience": 2,
+  "seed": 13
+ },
+ "base_teste": {
+  "chrF": 49.43,
+  "BLEU": 29.97
+ },
+ "base_val": {
+  "chrF": 38.19,
+  "BLEU": 20.29
+ },
+ "historico": [
+  {
+   "epoca": 0,
+   "val_loss": 1.5405
+  },
+  {
+   "epoca": 1,
+   "train_loss": 1.2069,
+   "val_loss": 1.3169
+  },
+  {
+   "epoca": 2,
+   "train_loss": 0.9977,
+   "val_loss": 1.29
+  },
+  {
+   "epoca": 3,
+   "train_loss": 0.8543,
+   "val_loss": 1.291
+  },
+  {
+   "epoca": 4,
+   "train_loss": 0.7515,
+   "val_loss": 1.3092
+  }
+ ],
+ "parada": "parada antecipada (sem melhora da perda de validacao por 2 epocas)",
+ "ajustado_teste": {
+  "chrF": 55.26,
+  "BLEU": 38.97
+ },
+ "ajustado_val": {
+  "chrF": 42.52,
+  "BLEU": 28.46
+ },
+ "amostras": [
+  {
+   "en": "Oh shoot, I fell asleep with the window open, again...",
+   "ref": "Puxa vida, caí no sono com a janela aberta outra vez...",
+   "ajustado": "Oh shoot, eu adormeci com a janela aberta, de novo..."
+  },
+  {
+   "en": "...it's so windy...",
+   "ref": "...e tá ventando tanto...",
+   "ajustado": "...é tão ventoso..."
+  },
+  {
+   "en": "...and why can I see Komona through the window?",
+   "ref": "...e por que eu estou vendo Komona pela janela?",
+   "ajustado": "...e por que eu posso ver Komona pela janela?"
+  },
+  {
+   "en": "KOMONA!",
+   "ref": "KOMONA!",
+   "ajustado": "KOMONA!"
+  },
+  {
+   "en": "The Potion Contest!",
+   "ref": "O torneio de poções!",
+   "ajustado": "O Concurso de Poções!"
+  },
+  {
+   "en": "I must've... must've accidentally fallen asleep!",
+   "ref": "Eu devo... devo ter cochilado sem querer!",
+   "ajustado": "Eu devo ter... acidentalmente dormido!"
+  },
+  {
+   "en": "Where am I ?!?",
+   "ref": "Onde eu estou?!?",
+   "ajustado": "Onde eu estou ?!?"
+  },
+  {
+   "en": "cK?",
+   "ref": "cK?",
+   "ajustado": "cK?"
+  },
+  {
+   "en": "qua",
+   "ref": "qua",
+   "ajustado": "qua"
+  },
+  {
+   "en": "Carrot! You're so cute to have thought of bringing me to the Contest!",
+   "ref": "Carrot! Você é um fofo por ter me trazido até o torneio!",
+   "ajustado": "Carrot! Você é tão fofa de ter pensado em me trazer para o Concurso!"
+  }
+ ],
+ "minutos": 1.4
+}

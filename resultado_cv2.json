@@ -1,0 +1,110 @@
+{
+ "modelo_base": "Helsinki-NLP/opus-mt-tc-big-en-pt",
+ "n_treino": 1108,
+ "n_val": 283,
+ "n_teste": 242,
+ "config": {
+  "epochs": 8,
+  "bs": 16,
+  "lr": 0.0002,
+  "rank": 16,
+  "patience": 2,
+  "seed": 13
+ },
+ "base_teste": {
+  "chrF": 38.2,
+  "BLEU": 20.28
+ },
+ "base_val": {
+  "chrF": 57.96,
+  "BLEU": 35.71
+ },
+ "historico": [
+  {
+   "epoca": 0,
+   "val_loss": 1.2051
+  },
+  {
+   "epoca": 1,
+   "train_loss": 1.2161,
+   "val_loss": 0.9596
+  },
+  {
+   "epoca": 2,
+   "train_loss": 0.9898,
+   "val_loss": 0.9389
+  },
+  {
+   "epoca": 3,
+   "train_loss": 0.8501,
+   "val_loss": 0.951
+  },
+  {
+   "epoca": 4,
+   "train_loss": 0.743,
+   "val_loss": 0.9542
+  }
+ ],
+ "parada": "parada antecipada (sem melhora da perda de validacao por 2 epocas)",
+ "ajustado_teste": {
+  "chrF": 43.09,
+  "BLEU": 28.9
+ },
+ "ajustado_val": {
+  "chrF": 63.37,
+  "BLEU": 46.3
+ },
+ "amostras": [
+  {
+   "en": "Pepper, you bring shame to Chaosah.",
+   "ref": "Pepper, você envergonha Chaosah.",
+   "ajustado": "Pepper, você traz vergonha para Chaosah."
+  },
+  {
+   "en": "Cayenne is right, a witch of Chaosah worth the title must command fear, obedience and respect.",
+   "ref": "Cayenne tem razão, uma bruxa de Chaosah que se preze deve despertar medo, obediência e respeito.",
+   "ajustado": "Cayenne está certa, uma bruxa de Chaosah merece o título deve comandar medo, obediência e respeito."
+  },
+  {
+   "en": "... while you, you offer tea and cupcakes, even to our demons*...",
+   "ref": "... enquanto você ... você oferece chá e bolinhos, até para os nossos demônios*...",
+   "ajustado": "... enquanto você, você oferece chá e cupcakes, até mesmo aos nossos demônios*..."
+  },
+  {
+   "en": "...godmothers...",
+   "ref": "...madrinhas...",
+   "ajustado": "...madrinhas..."
+  },
+  {
+   "en": "SILENCE!",
+   "ref": "SILÊNCIO !",
+   "ajustado": "SILNCIA!"
+  },
+  {
+   "en": "Ta-daaa!",
+   "ref": "Ta-daaa!",
+   "ajustado": "Ta-daaa!"
+  },
+  {
+   "en": "Pepper, you are certainly talented, but you are also our only successor.",
+   "ref": "Pepper, você certamente é talentosa, mas também é a nossa única sucessora.",
+   "ajustado": "Pepper, você certamente é talentosa, mas você também é nossa única sucessora."
+  },
+  {
+   "en": "It is our duty to make you a true, mean witch of Chaosah.",
+   "ref": "É o nosso dever fazer de você uma verdadeira bruxa má de Chaosah.",
+   "ajustado": "É nosso dever fazer de você uma verdadeira bruxa de Chaosah."
+  },
+  {
+   "en": "But... I don't want to be mean! It's ...it's contrary to everyth...",
+   "ref": "Mas... Eu não quero ser má! É ...é contrário a tud...",
+   "ajustado": "Mas... Eu não quero ser má! É... é contrária a tudo..."
+  },
+  {
+   "en": "... or we'll revoke all of your powers!",
+   "ref": "... ou nós revogaremos todos os seus poderes!",
+   "ajustado": "...ou nós vamos revogar todos os seus poderes!"
+  }
+ ],
+ "minutos": 1.3
+}
